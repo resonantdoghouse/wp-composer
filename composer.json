@@ -31,16 +31,14 @@
     "wpackagist-plugin/show-current-template": "*",
     "wpackagist-plugin/kint-php-debugger": "*",
     "wpackagist-plugin/custom-field-suite": "*",
-    "wpackagist-plugin/wp-helpers": "*",
-    "resonantdoghouse/2017-kiddo": "dev-master"
+    "wpackagist-plugin/wp-helpers": "*"
   },
   "extra": {
     "webroot-dir": "wp/",
     "webroot-package": "wordpress/wordpress",
     "installer-paths": {
       "app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "app/themes/{$name}/": ["type:wordpress-theme"],
-      "app/themes/kiddo/": ["resonantdoghouse/2017-kiddo"]
+      "app/themes/{$name}/": ["type:wordpress-theme"]
     }
   }
 }
