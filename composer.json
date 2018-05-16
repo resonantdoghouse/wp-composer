@@ -1,0 +1,46 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "type": "webroot",
+        "name": "wordpress/wordpress",
+        "version": "4.9.5",
+        "dist": {
+          "url": "https://github.com/WordPress/WordPress/archive/4.9.5.zip",
+          "type": "zip"
+        },
+        "require": {
+          "fancyguy/webroot-installer": "1.0.0"
+        }
+      }
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/resonantdoghouse/2017-kiddo"
+    }
+  ],
+  "require": {
+    "wordpress/wordpress": "4.9.5",
+    "wpackagist-theme/twentyseventeen": "*",
+    "wpackagist-plugin/contact-form-7": "*",
+    "wpackagist-plugin/show-current-template": "*",
+    "wpackagist-plugin/kint-php-debugger": "*",
+    "wpackagist-plugin/custom-field-suite": "*",
+    "wpackagist-plugin/wp-helpers": "*",
+    "resonantdoghouse/2017-kiddo": "dev-master"
+  },
+  "extra": {
+    "webroot-dir": "wp/",
+    "webroot-package": "wordpress/wordpress",
+    "installer-paths": {
+      "app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "app/themes/{$name}/": ["type:wordpress-theme"],
+      "app/themes/kiddo/": ["resonantdoghouse/2017-kiddo"]
+    }
+  }
+}
