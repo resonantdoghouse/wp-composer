@@ -6,6 +6,8 @@ In the app folder there are themes and plugins for testing, some maybe some inte
 
 ### Intsall
 
+If you don't have Composer installed... Start here: [Composer Install](https://getcomposer.org/doc/00-intro.md)
+
 To install wordress, plugins & themes run:
 
 `composer install`
